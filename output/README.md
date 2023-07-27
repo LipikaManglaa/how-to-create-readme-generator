@@ -4,14 +4,14 @@
 # how-to-create-readme-generator
   
 ## Description
-how can we create readme file by terminal
+how can we create readme generator easy way by terminal
   
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributions](#contributions)
 
+* [Testing](#testing)
 * [Questions](#questions)
 
 ## Installation
@@ -19,15 +19,15 @@ how can we create readme file by terminal
     
   
 ## Usage
-easy way to create readme generator
+easy create readme file
   
 ## License
 * This application is covered under the MIT license
   
-## Contributions
-    testing contribution
-    
 
+## Testing
+    tesing instructions
+    
   
 ## Questions
 Created by: [LipikaManglaa](https://github.com/LipikaManglaa)
