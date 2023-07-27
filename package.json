@@ -16,6 +16,7 @@
   "author": "LipikaManglaa",
   "license": "MIT",
   "dependencies": {
+    "badge-maker": "^3.3.1",
     "inquirer": "^8.2.4"
   }
 }
