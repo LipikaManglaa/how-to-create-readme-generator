@@ -5,98 +5,97 @@ function generateMarkdown(data) {
     return `# ${data.title}
   
   `;
-  }
+}
 
-  //condition output for heading
-  const generateInstall = installText => {
+//condition output for heading
+const generateInstall = installText => {
     if (!installText) {
-      return ''
+        return ''
     } else {
-      return `## Installation
+        return `## Installation
     ${installText}
     `
     }
-  }
-  const generateContribute = contributeText => {
+}
+const generateContribute = contributeText => {
     if (!contributeText) {
-      return ''
+        return ''
     } else {
-      return `## Contributions
+        return `## Contributions
     ${contributeText}
     `
     }
-  }
-  const generateTesting = testText => {
+}
+const generateTesting = testText => {
     if (!testText) {
-      return ''
+        return ''
     } else {
-      return `## Testing
+        return `## Testing
     ${testText}
     `
     }
-  }
-  const installCheck = check => {
+}
+const installCheck = check => {
     if (!check) {
-      return '';
+        return '';
     } else {
-      return `* [Installation](#installation)`
+        return `* [Installation](#installation)`
     }
-  }
-  const contributeCheckData = check => {
+}
+const contributeCheckData = check => {
     if (!check) {
-      return '';
+        return '';
     } else {
-      return `* [Contributions](#contributions)`
+        return `* [Contributions](#contributions)`
     }
-  }
-  const testCheckData = check => {
+}
+const testCheckData = check => {
     if (!check) {
-      return '';
+        return '';
     } else {
-      return `* [Testing](#testing)`
+        return `* [Testing](#testing)`
     }
-  }
-  
-  
-  
-  // function to generate markdown for README
-  function generateMarkdown(data) {
+}
+
+
+
+// function to generate markdown for README
+function generateMarkdown(data) {
     return `
-    ![GitHub](https://img.shields.io/github/license/${data.githubUsername}/${data.title})
+![GitHub](https://img.shields.io/github/license/${data.githubUsername}/${data.title})
   
-    # ${data.title}
+# ${data.title}
   
-    ## Description
-    ${data.about}
+## Description
+${data.about}
   
-    ## Table of Contents
-    ${installCheck(data.install)}
-    * [Usage](#usage)
-    * [License](#license)
-    ${contributeCheckData(data.contribution)}
-    ${testCheckData(data.testing)}
-    * [Questions](#questions)
-    
-    ${generateInstall(data.install)}
+## Table of Contents
+${installCheck(data.install)}
+* [Usage](#usage)
+* [License](#license)
+${contributeCheckData(data.contribution)}
+${testCheckData(data.testing)}
+* [Questions](#questions)
+
+${generateInstall(data.install)}
   
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
   
-    ## License
-    * This application is covered under the ${data.license} license
+## License
+* This application is covered under the ${data.license} license
   
-    ${generateContribute(data.contribution)}
-    ${generateTesting(data.testing)}
+${generateContribute(data.contribution)}
+${generateTesting(data.testing)}
   
-    ## Questions
-    Created by: [${data.githubUsername}](${data.gitLink})
-    
-    If you have any further questions please feel free to contact me at [${data.email}](${data.email})
+## Questions
+Created by: [${data.githubUsername}](${data.gitLink})
+
+If you have any further questions please feel free to contact me at [${data.email}](${data.email})
   
   
   `;
-  }
-  
-  
-  module.exports = generateMarkdown;
-  
+}
+
+
+module.exports = generateMarkdown;
