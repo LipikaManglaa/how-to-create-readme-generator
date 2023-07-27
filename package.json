@@ -1,0 +1,21 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "how to create readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hoe-to-create-reame-generator"
+  },
+  "keywords": [
+    "reame"
+  ],
+  "author": "LipikaManglaa",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
